@@ -74,4 +74,21 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  --ion-color-vermelho_novo: #ff3d00;
+  --ion-color-vermelho_novo-rgb: 255,61,0;
+  --ion-color-vermelho_novo-contrast: #ffffff;
+  --ion-color-vermelho_novo-contrast-rgb: 255,255,255;
+  --ion-color-vermelho_novo-shade: #e03600;
+  --ion-color-vermelho_novo-tint: #ff501a;
+
+}
+
+.ion-color-vermelho_novo {
+  --ion-color-base: var(--ion-color-vermelho_novo);
+  --ion-color-base-rgb: var(--ion-color-vermelho_novo-rgb);
+  --ion-color-contrast: var(--ion-color-vermelho_novo-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-vermelho_novo-contrast-rgb);
+  --ion-color-shade: var(--ion-color-vermelho_novo-shade);
+  --ion-color-tint: var(--ion-color-vermelho_novo-tint);
 }
