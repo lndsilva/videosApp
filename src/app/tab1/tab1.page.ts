@@ -41,6 +41,24 @@ export class Tab1Page {
       cartaz: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/Aej7rR73kpAKce6XXBLeqijAwPD.jpg',
       generos: ['Ação', 'Aventura', 'Comédia'],
       paginas: '/esquadrao-trovao'
+    },
+    {
+      nome: 'Mulher-Maravilha 1984',
+      lancamento: '17/12/2020',
+      duracao: '2h 31m',
+      classificacao: 67,
+      cartaz: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/qDA95ebiy3W3m8hTRB3xZNZVVBM.jpg',
+      generos: ['Fantasia', 'Ação', 'Aventura'],
+      paginas: '/esquadrao-trovao'
+    },
+    {
+      nome: 'Vanquish',
+      lancamento: '16/04/2021',
+      duracao: '1h 36m',
+      classificacao: 60,
+      cartaz: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/1jkNM1NHyHsxiBBuOlOeqgmidM0.jpg',
+      generos: ['Ação', 'Crime', 'Thriller'],
+      paginas: '/esquadrao-trovao'
     }
   ];
 
