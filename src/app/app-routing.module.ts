@@ -3,24 +3,21 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
+    path:'',
+    redirectTo: 'login',
+    pathMatch: 'full'
+  },
+  {
     path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
   },
   {
-    path: 'sem-retorno',
-    loadChildren: () => import('./filmes/sem-retorno/sem-retorno.module').then( m => m.SemRetornoPageModule)
-  },
-  {
-    path: 'mira-perigo',
-    loadChildren: () => import('./filmes/mira-perigo/mira-perigo.module').then( m => m.MiraPerigoPageModule)
-  },
-  {
-    path: 'esquadrao-trovao',
-    loadChildren: () => import('./filmes/esquadrao-trovao/esquadrao-trovao.module').then( m => m.EsquadraoTrovaoPageModule)
-  },
-  {
     path: 'dados-filme',
     loadChildren: () => import('./dados-filme/dados-filme.module').then( m => m.DadosFilmePageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   }
 
 ];

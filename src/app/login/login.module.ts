@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { SemRetornoPageRoutingModule } from './sem-retorno-routing.module';
+import { LoginPageRoutingModule } from './login-routing.module';
 
-import { SemRetornoPage } from './sem-retorno.page';
+import { LoginPage } from './login.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    SemRetornoPageRoutingModule
+    LoginPageRoutingModule
   ],
-  declarations: [SemRetornoPage]
+  declarations: [LoginPage]
 })
-export class SemRetornoPageModule {}
+export class LoginPageModule {}
