@@ -3,6 +3,7 @@
 
 /** Ionic CSS Variables **/
 :root {
+
   /** primary **/
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;
@@ -82,6 +83,14 @@
   --ion-color-vermelho_novo-shade: #e03600;
   --ion-color-vermelho_novo-tint: #ff501a;
 
+  --ion-color-laranja: #2a9387;
+  --ion-color-laranja-rgb: 42,147,135;
+  --ion-color-laranja-contrast: #ffffff;
+  --ion-color-laranja-contrast-rgb: 255,255,255;
+  --ion-color-laranja-shade: #258177;
+  --ion-color-laranja-tint: #3f9e93;
+
+
 }
 
 .ion-color-vermelho_novo {
@@ -91,4 +100,6 @@
   --ion-color-contrast-rgb: var(--ion-color-vermelho_novo-contrast-rgb);
   --ion-color-shade: var(--ion-color-vermelho_novo-shade);
   --ion-color-tint: var(--ion-color-vermelho_novo-tint);
+
+
 }

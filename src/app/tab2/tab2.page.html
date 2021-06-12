@@ -1,17 +1,39 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
+  <ion-toolbar color="primary">
+    <ion-title> {{titulo}} </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" color="light">
+  <ion-searchbar placeholder="Buscar"></ion-searchbar>
 
+  <ion-list>
+    <ion-item-sliding *ngFor="let serie of listaSeries">
+      <ion-item lines="full" (click)="exibirSerie(serie)">
+        <ion-thumbnail slot="start">
+          <img [src]="serie.cartaz" />
+        </ion-thumbnail>
+        <ion-label class="ion-text-wrap">
+          <div>
+            <h1>{{serie.nome}}</h1>
+            <p>{{serie.lancamento}}</p>
+            <ion-badge color="light" *ngFor="let genero of serie.generos">
+              {{genero}}
+            </ion-badge>
+            <p>{{serie.duracao}}</p>
+          </div>
+        </ion-label>
 
+        <ion-chip color="success" outline>
+          <ion-label>{{serie.classificacao}}</ion-label>
+        </ion-chip>
+      </ion-item>
+
+      <ion-item-options side="end">
+        <ion-item-option color="vermelho_novo" (click)="exibirAlertFavorito()">
+          <ion-icon slot="icon-only" name="star"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
 </ion-content>
